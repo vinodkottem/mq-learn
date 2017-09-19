@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 2
+  domain: mybluemix.net
+  name: worker-mq
+  host: worker-mq-${random-word}
+  disk_quota: 128M
+  env:
+    RABBIT_AMQP_URL: amqp://<url>
+  

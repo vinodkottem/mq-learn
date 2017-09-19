@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: master-mq
+  host: master-mq-${random-word}
+  disk_quota: 128M
+  env:
+    RABBIT_AMQP_URL: amqp://
+  
